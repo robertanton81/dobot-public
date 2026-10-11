@@ -2397,13 +2397,12 @@ describe('the connector tools in a run', () => {
     })
 
     it('names the approved write in the stop line when the user stops while it runs', async () => {
-      const connector = { name: 'add', class: 'write' as const, description: 'add a note', schema: z.object({}), consequence: () => 'adds a note', run: () => new Promise<string>(() => {}) }
+      // The stop is requested from inside the write, so it always lands after the approval while
+      // the write runs. A timer started before the gate could fire during the approval steps on a
+      // slow machine, and then no write had started, so the stop line rightly names none.
       const t = makeContext({ store, botId, model: new FakeModel([message([toolUse('notes__add', {})])]), sandbox: new FakeSandbox(), tools: [] })
-      const write = defineTool({ name: 'notes__add', description: 'add a note', schema: z.object({}), run: (input, ctx) => {
-        const call = runConnectorTool('notes__add', connector, input as never, { fetch: globalThis.fetch, mapyApiKey: null, mailbox: null, mailboxBotId: null }, ctx)
-        setTimeout(() => t.stop.request(), 5)
-        return call
-      } })
+      const connector = { name: 'add', class: 'write' as const, description: 'add a note', schema: z.object({}), consequence: () => 'adds a note', run: () => { setTimeout(() => t.stop.request(), 0); return new Promise<string>(() => {}) } }
+      const write = defineTool({ name: 'notes__add', description: 'add a note', schema: z.object({}), run: (input, ctx) => runConnectorTool('notes__add', connector, input as never, { fetch: globalThis.fetch, mapyApiKey: null, mailbox: null, mailboxBotId: null }, ctx) })
       t.ctx.tools.push(write)
       t.decisions.push('allowed')
 
