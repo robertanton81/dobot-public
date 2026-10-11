@@ -1,0 +1,77 @@
+{
+  "head": "4c50032a1f8be3a3b9056bf0c949783690907b00",
+  "capturedAt": "2026-09-17T22:14:52.598Z",
+  "existingRuns": [
+    "05b0762f-11e1-48b1-9c3d-49cfe209194b",
+    "0b149d27-a9d3-4afa-b485-ca63c86d12df",
+    "1105dfb6-b458-44d2-b953-4e30a23c475a",
+    "118b2ee2-d691-4fe1-80d4-761a3b20394a",
+    "15c63932-05e8-428b-96dd-727ec9401d83",
+    "1ef8fec2-a0ff-483e-b525-21654d92cf87",
+    "23092bd0-6934-4099-b193-2d7802fbfbf3",
+    "28197b0b-5f3f-402c-8ea7-5f36af2385dd",
+    "29ac39ab-d188-4983-8cb2-8c4c627c6825",
+    "2e18afd8-06ce-40c2-97d5-a68841a6047c",
+    "30d8fd4d-b70a-4aa6-8f72-8bfb58aa7278",
+    "39c44091-ce29-41e2-b2d3-c26855bcb27a",
+    "3eb131f8-7354-4288-a578-72a062807c8a",
+    "3f0235c8-b7ab-4fff-915b-bf89c50f2a96",
+    "4aa94475-586a-4b86-a3c2-f7af48a33a3f",
+    "4b68dabe-7c19-4daf-b06d-ce176e8dcd30",
+    "5f7e30a2-e980-40bd-afba-60344b9ed55f",
+    "68a0fad7-a599-4ecf-aa9e-6282543fe163",
+    "731f668b-d513-4225-beb4-d7cffcb721cd",
+    "7ace68ed-3d44-4049-a67b-46ca90153b1b",
+    "7b72be72-e50c-4012-b2b3-b7826ae67bcb",
+    "7c6dba60-b5a0-4d17-87e3-0a22a6dc5ab9",
+    "814a0134-b2e8-43d0-ae4c-15d7e2b7c5d6",
+    "819c1553-6d64-4eb0-bb3d-2f5c41c80a8c",
+    "84ce44c5-8fe3-477d-bc4f-ca8afd874fb8",
+    "8eeef887-8a3f-4bb9-8f00-bb5933093ade",
+    "920d6cbc-a5f2-4d54-852a-052f4c6ab167",
+    "952674f2-40ad-4752-b4fa-91ed3108c10a",
+    "9a48827a-cd68-4f5a-a3bc-45c38299a7c0",
+    "a3088539-9962-4a89-a47b-5f6a9b4c9f3f",
+    "a3fea4f5-7f10-4efc-b217-168ef0a56ab0",
+    "aaaa2a4c-8e80-4035-ad4a-1c1f590c558a",
+    "ac7f94ab-f340-47a6-82bb-6e19339d96fa",
+    "b3867d6e-d301-4760-b3b7-af6a28e67715",
+    "c2781a7a-a584-4271-b2b8-8849692ae345",
+    "c5dd5468-352c-4b14-8d96-60841edf83c6",
+    "cbd1f246-da2e-4db0-8b87-53e58a95ffaa",
+    "cdc52acc-50ca-4111-9166-bef1963c2b1c",
+    "cec6b4af-305d-4988-b13d-6ceda4d52f71",
+    "d158eb4b-144b-47a5-ab30-55e8812fc56b",
+    "d21b0b8e-d1cc-4500-befc-e88d6f7b7a1c",
+    "d24a749c-c0ae-4530-82b3-c24dee1f0135",
+    "d4e20693-f978-4d83-97ad-6fc8891a75c4",
+    "e2633973-6d59-4c36-8c29-9d5e5f4e0d26",
+    "e2c49aee-00bc-4cd0-93e6-387ed1ee751f",
+    "e7792f70-6b46-4e5b-96d1-9f6ea2e05f15",
+    "f1ab2538-b35e-4f2a-aca8-9f8f82eb2350",
+    "f88c136c-7506-4753-b4d2-65807c914e3c",
+    "ff4752e4-dffd-4285-812a-d164ff484b5b"
+  ],
+  "files": {
+    "memory.md": {
+      "sha256": "516bedfbcef079dbc4729df687accf9ba0f971dbfd302421b02617b3bc449a47",
+      "bytes": 4098
+    },
+    "approval-rules.json": {
+      "sha256": "b2e0903e82bef3c1464688b4d69efe13cdc34d584c5992c8d8a63e4b23b9f584",
+      "bytes": 52
+    },
+    "skills/apply-to-posting.md": {
+      "sha256": "835f91d0b4cebf996ee71bbee736c5d35b617b29416e09ef3c4a3a26161e00b0",
+      "bytes": 2460
+    },
+    "skills/search-job-board.md": {
+      "sha256": "a03a3ecea0bf4287b3b02ce8e5780977b00518d51ddc04d2ab3e0fd9f3b8dc42",
+      "bytes": 1642
+    },
+    "workspace/cv.pdf": {
+      "sha256": "017333bdb36c4b623acffcfd62740474751a8cb207a554f0d98b300fa5c8c473",
+      "bytes": 88914
+    }
+  }
+}

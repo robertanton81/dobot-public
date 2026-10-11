@@ -1,0 +1,28 @@
+{
+  "id": "27d56d4c-a8a8-4e90-854b-eff381c40008",
+  "t": "2026-09-17T22:19:15.134Z",
+  "botId": "job-hunt-bot",
+  "role": "card",
+  "card": {
+    "card": "approval",
+    "approvalId": "110bb7f5-2abe-4dd8-88b3-a8936cb92d00",
+    "runId": "cea07d3c-6893-4ebb-9895-d8f41a82d7ca",
+    "actionKind": "submit",
+    "summary": "Submit this application to Company A for the Senior Node.js Developer (Company A) role",
+    "consequences": [
+      "the employer receives this application under my name",
+      "the cover letter and CV are sent as attached",
+      "this counts as certifying the information in the form is accurate",
+      "it cannot be withdrawn from here afterward"
+    ],
+    "warnings": [
+      "This is a rehearsal per your instruction; you said you will choose Deny",
+      "An earlier rehearsal for this same posting was also denied on 2026-09-17"
+    ],
+    "target": "Odeslat zájem",
+    "url": "https://www.startupjobs.cz/nabidka/100001/example-posting-a#application",
+    "shot": "525572f366da39c646797b2a9b602a4f3894e10304fced1376da29b2eca7694f",
+    "status": "denied",
+    "announced": true
+  }
+}

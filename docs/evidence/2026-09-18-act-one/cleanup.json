@@ -1,0 +1,25 @@
+{
+  "checkedAt": "2026-09-17T22:24:18.529Z",
+  "botState": "idle",
+  "normalIdlePause": {
+    "t": "2026-09-17T22:21:43.201Z",
+    "level": "info",
+    "msg": "sandbox paused",
+    "sandboxId": "i4wbt3opyimbukfb07snp",
+    "alreadyPaused": false
+  },
+  "localServers": [
+    {
+      "port": 3000,
+      "stopped": true,
+      "result": "ECONNREFUSED"
+    },
+    {
+      "port": 5173,
+      "stopped": true,
+      "result": "ECONNREFUSED"
+    }
+  ],
+  "temporaryBrowserTabClosed": true,
+  "exposedStreamCredential": "Old stream stopped and replaced through connectSandbox at 22:16:10 UTC; normal run connected again afterward."
+}

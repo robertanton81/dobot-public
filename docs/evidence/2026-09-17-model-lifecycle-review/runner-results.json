@@ -1,0 +1,254 @@
+[
+  {
+    "name": "normal completion",
+    "outcome": "done",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-IZv4WP"
+  },
+  {
+    "name": "signed thinking and tool result continue intact",
+    "outcome": "done",
+    "requests": 3,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-t71nOR"
+  },
+  {
+    "name": "ping-only stall",
+    "outcome": "failed",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-CA4FWn"
+  },
+  {
+    "name": "successful headers with no SSE body",
+    "outcome": "failed",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-SyeN9W"
+  },
+  {
+    "name": "empty successful body",
+    "outcome": "failed",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-wu3MBz"
+  },
+  {
+    "name": "connection ends before message_stop",
+    "outcome": "failed",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-e7KncK"
+  },
+  {
+    "name": "error event after tool block",
+    "outcome": "failed",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-d7jcMy"
+  },
+  {
+    "name": "HTTP 400",
+    "outcome": "failed",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-ni3sLj"
+  },
+  {
+    "name": "HTTP 529 retries then succeeds",
+    "outcome": "done",
+    "requests": 3,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-ID7xCY"
+  },
+  {
+    "name": "HTTP 529 exhausts both retries",
+    "outcome": "failed",
+    "requests": 4,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-zbzEU8"
+  },
+  {
+    "name": "truncated tool retries with higher cap",
+    "outcome": "done",
+    "requests": 3,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-gta4G9"
+  },
+  {
+    "name": "tool truncated twice fails without execution",
+    "outcome": "failed",
+    "requests": 3,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-n2Wjp9"
+  },
+  {
+    "name": "BUG: completed text continuation omits earlier answer from chat",
+    "firstPartPresentInModelContext": true,
+    "firstPartPresentInChat": false,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-gAHbMO"
+  },
+  {
+    "name": "text truncation continues but chat omits the first part",
+    "outcome": "done",
+    "requests": 3,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-gAHbMO"
+  },
+  {
+    "name": "pause_turn continues",
+    "outcome": "done",
+    "requests": 3,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-FypjLG"
+  },
+  {
+    "name": "refusal ends failed",
+    "outcome": "failed",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-p4vsUC"
+  },
+  {
+    "name": "context limit ends failed",
+    "outcome": "failed",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-SD1lca"
+  },
+  {
+    "name": "Stop before headers",
+    "outcome": "cancelled",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-CmOd3p"
+  },
+  {
+    "name": "Stop during ping-only stream",
+    "outcome": "cancelled",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-jb7qTM"
+  },
+  {
+    "name": "BUG: retry sleep delays Stop and queue release",
+    "delayAfterStopMs": 1982,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-qBolHU"
+  },
+  {
+    "name": "Stop during retry delay holds queue until SDK wakes",
+    "outcome": "cancelled",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-qBolHU"
+  },
+  {
+    "name": "BUG: unfinished HTTP error body bypasses stall timer",
+    "sampleMs": 350,
+    "stallMs": 120,
+    "queueBlocked": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-voJ1nD"
+  },
+  {
+    "name": "unfinished HTTP error body holds queue beyond stream stall timeout",
+    "outcome": "cancelled",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-voJ1nD"
+  },
+  {
+    "name": "malformed stream fails but raw payload is logged",
+    "outcome": "failed",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-iU9mAb"
+  },
+  {
+    "name": "BUG: malformed model payload reaches stderr",
+    "rawWrites": 2,
+    "applicationLogAlsoContainsMarker": false
+  },
+  {
+    "name": "Stop after model response before platform tool",
+    "outcome": "cancelled",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-mQr6Bk"
+  },
+  {
+    "name": "Stop after final response is accepted but outcome is done",
+    "outcome": "done",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-cqkN88"
+  },
+  {
+    "name": "BUG: Stop lost before approval waiter",
+    "queueBlocked": true,
+    "keepAliveHeld": true,
+    "recovery": "second Stop",
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-dd4Hmr"
+  },
+  {
+    "name": "Stop before approval wait registration is lost",
+    "outcome": "cancelled",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-dd4Hmr"
+  },
+  {
+    "name": "BUG: Stop lost before question waiter",
+    "queueBlocked": true,
+    "keepAliveHeld": true,
+    "recovery": "second Stop",
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-IufmXo"
+  },
+  {
+    "name": "Stop before question wait registration is lost",
+    "outcome": "cancelled",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-IufmXo"
+  },
+  {
+    "name": "BUG: Stop lost before takeover waiter",
+    "queueBlocked": true,
+    "keepAliveHeld": true,
+    "recovery": "second Stop",
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-Nxr2LU"
+  },
+  {
+    "name": "Stop before takeover wait registration is lost",
+    "outcome": "cancelled",
+    "requests": 2,
+    "queueReleased": true,
+    "sandboxReleased": true,
+    "dataDir": "/var/folders/qs/mjwxnnx9335g8z790b6k9z9m0000gn/T/dobot-lifecycle-Nxr2LU"
+  }
+]

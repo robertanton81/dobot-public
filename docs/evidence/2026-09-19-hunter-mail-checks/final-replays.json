@@ -1,0 +1,28 @@
+[
+  {
+    "check": "finalAutomaticReplay",
+    "runId": "4e879f7c-4b44-49d9-a745-c2bfbdce95f5",
+    "source": "routine",
+    "started": "2026-09-20T07:25:16.353Z",
+    "ended": "2026-09-20T07:28:31.818Z",
+    "computerSteps": 13,
+    "costUsd": 0.364618,
+    "closingReport": "Nothing needs action",
+    "newVerdicts": 0,
+    "questions": 0,
+    "approvalCards": 0
+  },
+  {
+    "check": "finalManualReplay",
+    "runId": "8f9c959d-67e0-4054-b1dc-cbaebdd7069a",
+    "source": "message",
+    "started": "2026-09-20T07:29:16.779Z",
+    "ended": "2026-09-20T07:30:28.343Z",
+    "computerSteps": 4,
+    "costUsd": 0.206623,
+    "closingReport": "Nothing needs action",
+    "newVerdicts": 0,
+    "questions": 0,
+    "approvalCards": 0
+  }
+]

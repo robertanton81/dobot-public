@@ -1,0 +1,10 @@
+{
+  "sentUid": 190,
+  "sentAt": "2026-09-20T05:48:23Z",
+  "sentBodyIdenticalToVerifiedDraft": true,
+  "recipientMatchesOperator": true,
+  "ccCount": 0,
+  "bccCount": 0,
+  "gmailReceipt": "2026-09-20 07:48 Europe/Prague",
+  "gmailBothDossiersInspected": true
+}

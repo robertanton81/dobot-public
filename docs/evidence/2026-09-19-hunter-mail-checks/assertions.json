@@ -1,0 +1,14 @@
+{
+  "oneFirstSelection": true,
+  "overlapClaimsOnlyFive": true,
+  "overlapLeavesOutThree": true,
+  "oneRecoveryQuestion": true,
+  "leftSaved": true,
+  "noRepeatOfInterruptedNumber": true,
+  "laterReplyCannotReopenLeft": true,
+  "onlyReportSendAllowed": true,
+  "secondSiteThreeDenials": true,
+  "secondSiteAttachmentSucceeded": true,
+  "originalThreeSkillsUnchanged": true,
+  "deliveredBodyMatchesDraft": true
+}

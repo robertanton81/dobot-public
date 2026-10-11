@@ -1,0 +1,227 @@
+
+=== A. a closed port on 127.0.0.1 (connection refused) (1343 ms) ===
+{
+  "chain": [
+    {
+      "depth": 0,
+      "ctor": "APIConnectionError",
+      "name": "Error",
+      "message": "Connection error.",
+      "ownKeys": [
+        "status",
+        "headers",
+        "requestID",
+        "workspaceID",
+        "error",
+        "type",
+        "cause"
+      ]
+    },
+    {
+      "depth": 1,
+      "ctor": "TypeError",
+      "name": "TypeError",
+      "message": "fetch failed",
+      "ownKeys": []
+    },
+    {
+      "depth": 2,
+      "ctor": "Error",
+      "name": "Error",
+      "code": "ECONNREFUSED",
+      "message": "connect ECONNREFUSED 127.0.0.1:50189",
+      "ownKeys": [
+        "errno",
+        "code",
+        "syscall",
+        "address",
+        "port"
+      ]
+    }
+  ],
+  "logged": {
+    "errorName": "Error",
+    "errorMessage": "Connection error."
+  }
+}
+
+=== B. a closed port on "localhost" (two addresses may be tried) (1312 ms) ===
+{
+  "chain": [
+    {
+      "depth": 0,
+      "ctor": "APIConnectionError",
+      "name": "Error",
+      "message": "Connection error.",
+      "ownKeys": [
+        "status",
+        "headers",
+        "requestID",
+        "workspaceID",
+        "error",
+        "type",
+        "cause"
+      ]
+    },
+    {
+      "depth": 1,
+      "ctor": "TypeError",
+      "name": "TypeError",
+      "message": "fetch failed",
+      "ownKeys": []
+    },
+    {
+      "depth": 2,
+      "ctor": "AggregateError",
+      "name": "AggregateError",
+      "code": "ECONNREFUSED",
+      "message": "",
+      "ownKeys": [
+        "code"
+      ],
+      "errorsInside": [
+        {
+          "name": "Error",
+          "code": "ECONNREFUSED",
+          "message": "connect ECONNREFUSED ::1:50189"
+        },
+        {
+          "name": "Error",
+          "code": "ECONNREFUSED",
+          "message": "connect ECONNREFUSED 127.0.0.1:50189"
+        }
+      ]
+    }
+  ],
+  "logged": {
+    "errorName": "Error",
+    "errorMessage": "Connection error."
+  }
+}
+
+=== C. a name that does not resolve (1320 ms) ===
+{
+  "chain": [
+    {
+      "depth": 0,
+      "ctor": "APIConnectionError",
+      "name": "Error",
+      "message": "Connection error.",
+      "ownKeys": [
+        "status",
+        "headers",
+        "requestID",
+        "workspaceID",
+        "error",
+        "type",
+        "cause"
+      ]
+    },
+    {
+      "depth": 1,
+      "ctor": "TypeError",
+      "name": "TypeError",
+      "message": "fetch failed",
+      "ownKeys": []
+    },
+    {
+      "depth": 2,
+      "ctor": "Error",
+      "name": "Error",
+      "code": "ENOTFOUND",
+      "message": "getaddrinfo ENOTFOUND provider-that-does-not-exist.invalid",
+      "ownKeys": [
+        "errno",
+        "code",
+        "syscall",
+        "hostname"
+      ]
+    }
+  ],
+  "logged": {
+    "errorName": "Error",
+    "errorMessage": "Connection error."
+  }
+}
+
+=== D. TLS spoken to a plain HTTP port (1429 ms) ===
+{
+  "chain": [
+    {
+      "depth": 0,
+      "ctor": "APIConnectionError",
+      "name": "Error",
+      "message": "Connection error.",
+      "ownKeys": [
+        "status",
+        "headers",
+        "requestID",
+        "workspaceID",
+        "error",
+        "type",
+        "cause"
+      ]
+    },
+    {
+      "depth": 1,
+      "ctor": "TypeError",
+      "name": "TypeError",
+      "message": "fetch failed",
+      "ownKeys": []
+    },
+    {
+      "depth": 2,
+      "ctor": "Error",
+      "name": "Error",
+      "code": "ERR_SSL_PACKET_LENGTH_TOO_LONG",
+      "message": "806183F301000000:error:0A0000C6:SSL routines:tls_get_more_records:packet length too long:../deps/openssl/openssl/ssl/record/methods/tls_common.c:661:\n",
+      "ownKeys": [
+        "library",
+        "reason",
+        "code"
+      ]
+    }
+  ],
+  "logged": {
+    "errorName": "Error",
+    "errorMessage": "Connection error."
+  }
+}
+
+=== E. the connection is cut in the middle of the stream (68 ms) ===
+{
+  "chain": [
+    {
+      "depth": 0,
+      "ctor": "AnthropicError",
+      "name": "Error",
+      "message": "terminated",
+      "ownKeys": [
+        "cause"
+      ]
+    },
+    {
+      "depth": 1,
+      "ctor": "TypeError",
+      "name": "TypeError",
+      "message": "terminated",
+      "ownKeys": []
+    },
+    {
+      "depth": 2,
+      "ctor": "SocketError",
+      "name": "SocketError",
+      "code": "UND_ERR_SOCKET",
+      "message": "other side closed",
+      "ownKeys": [
+        "name",
+        "code",
+        "socket"
+      ]
+    }
+  ],
+  "logged": {
+    "errorName": "Error",
+    "errorMessage": "terminated"
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "codeCommit": "a8c711e",
+  "imageLimit": 13,
+  "runs": 6,
+  "calls": 93,
+  "recordedUsd": 1.667459,
+  "usdPerCall": 0.0179,
+  "cacheWriteShare": 0.447,
+  "note": "Recorded cost leaves out any provider charge for an attempt that returned no usage. Two rehearsals are a bounded check, not a general saving.",
+  "baseline": {
+    "runs": 68,
+    "calls": 1137,
+    "usdPerCall": 0.0211,
+    "cacheWriteShare": 0.69,
+    "turnLimitMs": 6808,
+    "replayEstimate": "35 to 40% less model cost"
+  },
+  "callClasses": {
+    "firstCallOfARun": 6,
+    "firstImageOfARun": 6,
+    "warmWithoutRemoval": 80,
+    "warmAfterRemoval": 1,
+    "expired": 0,
+    "uncertain": 0
+  },
+  "afterRemoval": {
+    "calls": 1,
+    "medianWrite": 26590,
+    "averageWrite": 26590
+  },
+  "perRun": [
+    {
+      "ordinal": 1,
+      "codeCommit": "b6847da",
+      "outcome": "failed",
+      "calls": 11,
+      "usd": 0.2822,
+      "judgedCalls": 9,
+      "reuseFraction": 1,
+      "medianWrite": 1432,
+      "mechanism": "insufficient",
+      "crossedLimit": false,
+      "removals": 0,
+      "mostImagesInARequest": 3,
+      "medianTurnMs": 6079,
+      "pace": "within the limit",
+      "medianCallBoundMs": 5271,
+      "firstImage": {
+        "call": 8,
+        "warmth": "warm",
+        "read": 25436,
+        "write": 17713,
+        "reusedThePreviousPrompt": false
+      }
+    },
+    {
+      "ordinal": 2,
+      "codeCommit": "a8c711e",
+      "outcome": "done",
+      "calls": 37,
+      "usd": 0.7187,
+      "judgedCalls": 34,
+      "reuseFraction": 1,
+      "medianWrite": 486,
+      "mechanism": "pass",
+      "crossedLimit": true,
+      "removals": 1,
+      "mostImagesInARequest": 13,
+      "medianTurnMs": 4309,
+      "pace": "within the limit",
+      "medianCallBoundMs": 2994,
+      "firstImage": {
+        "call": 10,
+        "warmth": "warm",
+        "read": 25436,
+        "write": 19564,
+        "reusedThePreviousPrompt": false
+      }
+    },
+    {
+      "ordinal": 3,
+      "codeCommit": "a8c711e",
+      "outcome": "done",
+      "calls": 18,
+      "usd": 0.262,
+      "judgedCalls": 16,
+      "reuseFraction": 1,
+      "medianWrite": 1432,
+      "mechanism": "pass",
+      "crossedLimit": false,
+      "removals": 0,
+      "mostImagesInARequest": 9,
+      "medianTurnMs": 3770,
+      "pace": "within the limit",
+      "medianCallBoundMs": 2991,
+      "firstImage": {
+        "call": 3,
+        "warmth": "warm",
+        "read": 25307,
+        "write": 2816,
+        "reusedThePreviousPrompt": false
+      }
+    },
+    {
+      "ordinal": 4,
+      "codeCommit": "a8c711e",
+      "outcome": "done",
+      "calls": 7,
+      "usd": 0.1241,
+      "judgedCalls": 5,
+      "reuseFraction": 1,
+      "medianWrite": 1480,
+      "mechanism": "insufficient",
+      "crossedLimit": false,
+      "removals": 0,
+      "mostImagesInARequest": 5,
+      "medianTurnMs": 5697,
+      "pace": "within the limit",
+      "medianCallBoundMs": 3897,
+      "firstImage": {
+        "call": 3,
+        "warmth": "warm",
+        "read": 25540,
+        "write": 3128,
+        "reusedThePreviousPrompt": false
+      }
+    },
+    {
+      "ordinal": 5,
+      "codeCommit": "a8c711e",
+      "outcome": "done",
+      "calls": 12,
+      "usd": 0.1325,
+      "judgedCalls": 10,
+      "reuseFraction": 1,
+      "medianWrite": 1473,
+      "mechanism": "pass",
+      "crossedLimit": false,
+      "removals": 0,
+      "mostImagesInARequest": 8,
+      "medianTurnMs": 4595,
+      "pace": "within the limit",
+      "medianCallBoundMs": 2509,
+      "firstImage": {
+        "call": 3,
+        "warmth": "warm",
+        "read": 25540,
+        "write": 3159,
+        "reusedThePreviousPrompt": false
+      }
+    },
+    {
+      "ordinal": 6,
+      "codeCommit": "a8c711e",
+      "outcome": "done",
+      "calls": 8,
+      "usd": 0.148,
+      "judgedCalls": 6,
+      "reuseFraction": 1,
+      "medianWrite": 1479,
+      "mechanism": "insufficient",
+      "crossedLimit": false,
+      "removals": 0,
+      "mostImagesInARequest": 6,
+      "medianTurnMs": 4150,
+      "pace": "within the limit",
+      "medianCallBoundMs": 2306,
+      "firstImage": {
+        "call": 3,
+        "warmth": "warm",
+        "read": 26007,
+        "write": 2988,
+        "reusedThePreviousPrompt": false
+      }
+    }
+  ]
+}

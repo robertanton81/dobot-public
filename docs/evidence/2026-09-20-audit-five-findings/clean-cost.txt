@@ -1,0 +1,16 @@
+1 MB  plain x              1 ms
+1 MB  ://a: pairs          3 ms
+1 MB  ://a:b repeats       4 ms
+1 MB  Bearer + spaces      3 ms
+1 MB  password=            2 ms
+1 MB  token spaces colon   3 ms
+1 MB  ?key=                1 ms
+1 MB  html-like page       4 ms
+5 MB  plain x              5 ms
+5 MB  ://a: pairs          15 ms
+5 MB  ://a:b repeats       17 ms
+5 MB  Bearer + spaces      14 ms
+5 MB  password=            11 ms
+5 MB  token spaces colon   16 ms
+5 MB  ?key=                5 ms
+5 MB  html-like page       14 ms

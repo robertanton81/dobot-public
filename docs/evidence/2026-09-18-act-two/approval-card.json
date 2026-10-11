@@ -1,0 +1,22 @@
+{
+  "card": "approval",
+  "approvalId": "a81142a0-3847-494f-9478-f96de492b97d",
+  "runId": "c1f0ddb8-e038-4a26-acba-67461e394231",
+  "actionKind": "book",
+  "summary": "Book Friday, September 18, 2026, 11:00–11:30am (Europe/Prague) for the interview with Interviewer XY / Company A, from the invitation received today 2026-09-18 08:34.",
+  "consequences": [
+    "a calendar invitation is sent to my address",
+    "this accepts the scheduling page's terms"
+  ],
+  "warnings": [
+    "Sender of the invitation mail is owner@example.com — not an address on Company A's own domain",
+    "A separate booking for the 2026-09-16 invitation (09:30-10:00 CET) is still standing/active in memory",
+    "An earlier booking for Friday Sept 18 09:00-09:30am (from a different invitation received 2026-09-17 14:10) was cancelled by the host on 2026-09-17",
+    "This is a fresh invitation link with no time of its own; the 11:00am slot was the first available working-hours slot today"
+  ],
+  "target": "Confirm",
+  "url": "https://cal.com/interviewer-xy/30min?slot=2026-09-18T09%3A00%3A00.000Z",
+  "shot": "16577955b9516d423c5c74ba4fe728d51df864c7b7fba948e24c46d5d7d721ee",
+  "status": "allowed",
+  "announced": true
+}

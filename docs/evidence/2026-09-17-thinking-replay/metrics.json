@@ -1,0 +1,399 @@
+{
+  "runId": "30d8fd4d-b70a-4aa6-8f72-8bfb58aa7278",
+  "startedAt": "2026-09-17T13:38:36.279Z",
+  "endedAt": "2026-09-17T13:40:54.781Z",
+  "durationSeconds": 138.502,
+  "outcome": "failed",
+  "steps": 39,
+  "successfulResponses": 22,
+  "failedApiRequests": 1,
+  "failedApiReason": "insufficient credit balance",
+  "outputTokens": 6172,
+  "thinkingTokens": 4138,
+  "maxOutputTokens": 1591,
+  "capHits": 0,
+  "discarded": 0,
+  "visibleTextEvents": 3,
+  "thinkingSummaryResponses": 10,
+  "zeroThinkingResponses": 12,
+  "summaryTruncations": 0,
+  "rememberCalls": 2,
+  "approvalEvents": 0,
+  "failedToolResults": 0,
+  "usd": 0.3822164,
+  "perCall": [
+    {
+      "call": 1,
+      "step": 0,
+      "outputTokens": 74,
+      "thinkingTokens": 17,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 40,
+      "summaryTruncated": false,
+      "toolNames": [
+        "open_url"
+      ],
+      "usd": 0.0365245
+    },
+    {
+      "call": 2,
+      "step": 0,
+      "outputTokens": 59,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "screenshot"
+      ],
+      "usd": 0.0037266
+    },
+    {
+      "call": 3,
+      "step": 1,
+      "outputTokens": 636,
+      "thinkingTokens": 542,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 593,
+      "summaryTruncated": false,
+      "toolNames": [
+        "left_click",
+        "left_click"
+      ],
+      "usd": 0.0157032
+    },
+    {
+      "call": 4,
+      "step": 3,
+      "outputTokens": 59,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "screenshot"
+      ],
+      "usd": 0.005429600000000001
+    },
+    {
+      "call": 5,
+      "step": 4,
+      "outputTokens": 452,
+      "thinkingTokens": 358,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 579,
+      "summaryTruncated": false,
+      "toolNames": [
+        "left_click",
+        "left_click"
+      ],
+      "usd": 0.0114078
+    },
+    {
+      "call": 6,
+      "step": 6,
+      "outputTokens": 59,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "screenshot"
+      ],
+      "usd": 0.0053892
+    },
+    {
+      "call": 7,
+      "step": 7,
+      "outputTokens": 217,
+      "thinkingTokens": 123,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 308,
+      "summaryTruncated": false,
+      "toolNames": [
+        "left_click",
+        "left_click"
+      ],
+      "usd": 0.0094406
+    },
+    {
+      "call": 8,
+      "step": 9,
+      "outputTokens": 59,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "screenshot"
+      ],
+      "usd": 0.0051845
+    },
+    {
+      "call": 9,
+      "step": 10,
+      "outputTokens": 179,
+      "thinkingTokens": 85,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 201,
+      "summaryTruncated": false,
+      "toolNames": [
+        "left_click",
+        "left_click"
+      ],
+      "usd": 0.0220082
+    },
+    {
+      "call": 10,
+      "step": 12,
+      "outputTokens": 59,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "screenshot"
+      ],
+      "usd": 0.0051570999999999995
+    },
+    {
+      "call": 11,
+      "step": 13,
+      "outputTokens": 737,
+      "thinkingTokens": 654,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 685,
+      "summaryTruncated": false,
+      "toolNames": [
+        "left_click",
+        "screenshot"
+      ],
+      "usd": 0.0283382
+    },
+    {
+      "call": 12,
+      "step": 15,
+      "outputTokens": 442,
+      "thinkingTokens": 371,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 652,
+      "summaryTruncated": false,
+      "toolNames": [
+        "left_click"
+      ],
+      "usd": 0.027343199999999998
+    },
+    {
+      "call": 13,
+      "step": 16,
+      "outputTokens": 59,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "screenshot"
+      ],
+      "usd": 0.0059984999999999995
+    },
+    {
+      "call": 14,
+      "step": 17,
+      "outputTokens": 1591,
+      "thinkingTokens": 1448,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 1735,
+      "summaryTruncated": false,
+      "toolNames": [
+        "remember"
+      ],
+      "usd": 0.0402082
+    },
+    {
+      "call": 15,
+      "step": 17,
+      "outputTokens": 110,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "remember"
+      ],
+      "usd": 0.009468500000000001
+    },
+    {
+      "call": 16,
+      "step": 17,
+      "outputTokens": 87,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 68,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "open_url"
+      ],
+      "usd": 0.0058557999999999995
+    },
+    {
+      "call": 17,
+      "step": 17,
+      "outputTokens": 59,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "screenshot"
+      ],
+      "usd": 0.0056219
+    },
+    {
+      "call": 18,
+      "step": 18,
+      "outputTokens": 281,
+      "thinkingTokens": 209,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 293,
+      "summaryTruncated": false,
+      "toolNames": [
+        "left_click"
+      ],
+      "usd": 0.0319457
+    },
+    {
+      "call": 19,
+      "step": 19,
+      "outputTokens": 59,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "screenshot"
+      ],
+      "usd": 0.0060929999999999995
+    },
+    {
+      "call": 20,
+      "step": 20,
+      "outputTokens": 190,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 74,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "left_click",
+        "type",
+        "left_click",
+        "type",
+        "key",
+        "screenshot"
+      ],
+      "usd": 0.0320082
+    },
+    {
+      "call": 21,
+      "step": 26,
+      "outputTokens": 189,
+      "thinkingTokens": 0,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 61,
+      "summaryChars": 0,
+      "summaryTruncated": false,
+      "toolNames": [
+        "triple_click",
+        "type",
+        "left_click",
+        "type",
+        "key",
+        "screenshot"
+      ],
+      "usd": 0.0327007
+    },
+    {
+      "call": 22,
+      "step": 32,
+      "outputTokens": 515,
+      "thinkingTokens": 331,
+      "stopReason": "tool_use",
+      "maxTokens": 16000,
+      "discarded": false,
+      "textChars": 0,
+      "summaryChars": 617,
+      "summaryTruncated": false,
+      "toolNames": [
+        "left_click",
+        "key",
+        "key",
+        "type",
+        "key",
+        "type",
+        "screenshot"
+      ],
+      "usd": 0.0366632
+    }
+  ]
+}

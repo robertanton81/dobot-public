@@ -1,0 +1,106 @@
+[
+  {
+    "case": "pre-aborted",
+    "result": "rejected",
+    "name": "Error",
+    "message": "Request was aborted.",
+    "elapsedMs": 12,
+    "requests": 0,
+    "connections": 0,
+    "signalListeners": 0
+  },
+  {
+    "case": "no-headers",
+    "result": "rejected",
+    "name": "Error",
+    "message": "Request was aborted.",
+    "elapsedMs": 45,
+    "afterStopMs": 12,
+    "requests": 1,
+    "connections": 0,
+    "signalListeners": 0
+  },
+  {
+    "case": "empty-success",
+    "result": "rejected",
+    "name": "ModelStalledError",
+    "message": "no event from the model for 0 s (request unknown)",
+    "elapsedMs": 124,
+    "requests": 1,
+    "connections": 0,
+    "signalListeners": 0
+  },
+  {
+    "case": "retry-success",
+    "result": "resolved",
+    "text": "ok",
+    "elapsedMs": 79,
+    "requests": 3,
+    "connections": 0,
+    "signalListeners": 0
+  },
+  {
+    "case": "retry-exhaust",
+    "result": "rejected",
+    "name": "Error",
+    "message": "503 {\"error\":{\"type\":\"overloaded_error\",\"message\":\"local overloaded\"}}",
+    "elapsedMs": 78,
+    "requests": 3,
+    "connections": 0,
+    "signalListeners": 0
+  },
+  {
+    "case": "retry-stop",
+    "result": "rejected",
+    "name": "Error",
+    "message": "Request was aborted.",
+    "elapsedMs": 3014,
+    "afterStopMs": 2962,
+    "pendingAtSample": true,
+    "requests": 1,
+    "connections": 0,
+    "signalListeners": 0
+  },
+  {
+    "case": "error-drip",
+    "result": "rejected",
+    "name": "Error",
+    "message": "400 This operation was aborted",
+    "elapsedMs": 363,
+    "pendingAtSample": true,
+    "requests": 1,
+    "connections": 0,
+    "signalListeners": 0
+  },
+  {
+    "case": "malformed",
+    "result": "rejected",
+    "name": "Error",
+    "message": "Expected double-quoted property name in JSON at position 40 (line 1 column 41)",
+    "elapsedMs": 15,
+    "requests": 1,
+    "connections": 0,
+    "signalListeners": 0
+  },
+  {
+    "case": "malformed-log-output",
+    "rawLogs": 2,
+    "containsOpaqueMarker": true
+  },
+  {
+    "case": "first-byte-timeout",
+    "result": "rejected",
+    "name": "Error",
+    "message": "Request timed out.",
+    "elapsedMs": 1378,
+    "requests": 3,
+    "connections": 0,
+    "signalListeners": 0
+  },
+  {
+    "case": "first-byte-timeout",
+    "headerTimers": 3,
+    "originalMs": 120000,
+    "scaledMs": 40
+  }
+]

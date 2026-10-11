@@ -1,0 +1,206 @@
+{
+  "checkedAt": "2026-09-19T21:08:22.152682+00:00",
+  "testSubject": "Dobot trigger test 20260919-2303",
+  "message": [
+    {
+      "uid": 158,
+      "subjectMatches": true,
+      "senderMatchesOperator": true,
+      "unseen": true
+    }
+  ],
+  "botId": "mail-trigger-test-c773",
+  "runId": "108b3a5e-a732-41c8-9907-fb59b59ca708",
+  "runCountAfterAcknowledgedRestart": 1,
+  "eventCounts": {
+    "queued": 1,
+    "status": 2,
+    "cost": 1,
+    "text": 1,
+    "end": 1
+  },
+  "outcome": "done",
+  "response": [
+    "Got it \u2014 I can confirm a new mail arrived in the mailbox that triggered this routine, at 23:05 on Saturday, 19 September 2026 (Europe/Prague). No further action was needed or taken; this acknowledgement completes the task."
+  ],
+  "modelCostUsd": 0.0245215,
+  "watermark": {
+    "uidValidity": "1",
+    "uidNext": 159
+  },
+  "receipt": {
+    "event": "mail-arrived",
+    "cursor": {
+      "generation": "1",
+      "position": 159
+    }
+  },
+  "sandboxCleanup": {
+    "sandboxId": "ila38vj5t9m3nf1eiep2b",
+    "paused": true,
+    "state": "paused"
+  },
+  "hunterFilesCompared": 1131,
+  "hunterChangedFiles": [],
+  "serverStarts": [
+    {
+      "start": 1,
+      "events": [
+        {
+          "t": "2026-09-19T21:02:37.998Z",
+          "level": "info",
+          "msg": "routines armed",
+          "botId": "mail-trigger-test-c773"
+        },
+        {
+          "t": "2026-09-19T21:02:37.999Z",
+          "level": "info",
+          "msg": "mail watcher started"
+        },
+        {
+          "t": "2026-09-19T21:02:37.999Z",
+          "level": "info",
+          "msg": "no notice address configured; nobody is mailed when a bot needs a human"
+        },
+        {
+          "t": "2026-09-19T21:02:38.001Z",
+          "level": "info",
+          "msg": "server listening"
+        },
+        {
+          "t": "2026-09-19T21:02:48.565Z",
+          "level": "info",
+          "msg": "mail watcher baseline set",
+          "unseen": 0
+        },
+        {
+          "t": "2026-09-19T21:03:41.754Z",
+          "level": "info",
+          "msg": "new mail",
+          "previous": 0,
+          "unseen": 1
+        },
+        {
+          "t": "2026-09-19T21:03:41.754Z",
+          "level": "info",
+          "msg": "event fired"
+        },
+        {
+          "t": "2026-09-19T21:03:41.755Z",
+          "level": "warn",
+          "msg": "routine not run: its skill is missing",
+          "botId": "mail-trigger-test-c773"
+        },
+        {
+          "t": "2026-09-19T21:03:41.756Z",
+          "level": "warn",
+          "msg": "the mail event was not handled; it fires again after the debounce"
+        }
+      ]
+    },
+    {
+      "start": 2,
+      "events": [
+        {
+          "t": "2026-09-19T21:05:16.203Z",
+          "level": "info",
+          "msg": "routines armed",
+          "botId": "mail-trigger-test-c773"
+        },
+        {
+          "t": "2026-09-19T21:05:16.203Z",
+          "level": "info",
+          "msg": "mail watcher started"
+        },
+        {
+          "t": "2026-09-19T21:05:16.203Z",
+          "level": "info",
+          "msg": "no notice address configured; nobody is mailed when a bot needs a human"
+        },
+        {
+          "t": "2026-09-19T21:05:16.206Z",
+          "level": "info",
+          "msg": "server listening"
+        },
+        {
+          "t": "2026-09-19T21:05:26.847Z",
+          "level": "info",
+          "msg": "mail arrived while the platform was down",
+          "uidNext": 159,
+          "previous": 1
+        },
+        {
+          "t": "2026-09-19T21:05:26.847Z",
+          "level": "info",
+          "msg": "new mail",
+          "previous": null,
+          "unseen": 1
+        },
+        {
+          "t": "2026-09-19T21:05:26.847Z",
+          "level": "info",
+          "msg": "event fired"
+        },
+        {
+          "t": "2026-09-19T21:05:26.849Z",
+          "level": "info",
+          "msg": "routine fired",
+          "botId": "mail-trigger-test-c773"
+        },
+        {
+          "t": "2026-09-19T21:05:26.856Z",
+          "level": "info",
+          "msg": "creating the bot computer",
+          "botId": "mail-trigger-test-c773"
+        },
+        {
+          "t": "2026-09-19T21:05:31.350Z",
+          "level": "info",
+          "msg": "sandbox created",
+          "botId": "mail-trigger-test-c773"
+        },
+        {
+          "t": "2026-09-19T21:05:43.847Z",
+          "level": "info",
+          "msg": "run ended",
+          "botId": "mail-trigger-test-c773",
+          "runId": "108b3a5e-a732-41c8-9907-fb59b59ca708",
+          "outcome": "done",
+          "steps": 0
+        }
+      ]
+    },
+    {
+      "start": 3,
+      "events": [
+        {
+          "t": "2026-09-19T21:06:54.848Z",
+          "level": "info",
+          "msg": "routines armed",
+          "botId": "mail-trigger-test-c773"
+        },
+        {
+          "t": "2026-09-19T21:06:54.849Z",
+          "level": "info",
+          "msg": "mail watcher started"
+        },
+        {
+          "t": "2026-09-19T21:06:54.849Z",
+          "level": "info",
+          "msg": "no notice address configured; nobody is mailed when a bot needs a human"
+        },
+        {
+          "t": "2026-09-19T21:06:54.852Z",
+          "level": "info",
+          "msg": "server listening"
+        },
+        {
+          "t": "2026-09-19T21:07:05.539Z",
+          "level": "info",
+          "msg": "mail watcher baseline set",
+          "unseen": 1
+        }
+      ]
+    }
+  ]
+}

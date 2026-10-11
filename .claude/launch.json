@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "dobot-dev",
+      "runtimeExecutable": "env",
+      "runtimeArgs": ["-u", "PORT", "pnpm", "dev"],
+      "port": 5173
+    },
+    {
+      "name": "dobot-start",
+      "runtimeExecutable": "env",
+      "runtimeArgs": ["-u", "PORT", "pnpm", "start"],
+      "port": 3000
+    }
+  ]
+}

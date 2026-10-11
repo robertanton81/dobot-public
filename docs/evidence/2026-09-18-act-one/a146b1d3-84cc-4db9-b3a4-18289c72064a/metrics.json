@@ -1,0 +1,19 @@
+{
+  "runId": "a146b1d3-84cc-4db9-b3a4-18289c72064a",
+  "startedAt": "2026-09-17T22:15:00.712Z",
+  "endedAt": "2026-09-17T22:15:31.091Z",
+  "durationSeconds": 30.379,
+  "outcome": "cancelled",
+  "summary": "stopped by the user",
+  "steps": 0,
+  "calls": 3,
+  "usd": 0.0923917,
+  "maxOutputTokens": 1559,
+  "capHits": 0,
+  "failedTools": [],
+  "approvals": [],
+  "consumedApprovals": [],
+  "computerActionsAfterDeny": null,
+  "memories": [],
+  "attachments": []
+}

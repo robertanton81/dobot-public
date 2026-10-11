@@ -1,0 +1,6 @@
+allowBuilds:
+  esbuild: true
+minimumReleaseAgeExclude:
+  - '@anthropic-ai/sdk@0.125.0'
+  - e2b@2.49.1
+  - zod@4.6.2

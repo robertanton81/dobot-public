@@ -1,0 +1,190 @@
+
+=== A. credit refusal as an error event after message_start (HTTP 200) ===
+{
+  requestsSeenByServer: 1,
+  constructorName: 'APIError',
+  name: 'Error',
+  hasStatusKey: true,
+  status: undefined,
+  typeofStatus: 'undefined',
+  type: 'invalid_request_error',
+  requestID: 'req_local_probe',
+  errorBodyKeys: [ 'type', 'error', 'request_id' ],
+  innerType: 'invalid_request_error',
+  logged: {
+    errorName: 'Error',
+    errorMessage: '{"type":"error","error":{"details":null,"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_local_probe"}'
+  },
+  providerRefusal: 'the account behind this API key has too little credit'
+}
+
+=== B. credit refusal as the first event of the stream (HTTP 200) ===
+{
+  requestsSeenByServer: 1,
+  constructorName: 'APIError',
+  name: 'Error',
+  hasStatusKey: true,
+  status: undefined,
+  typeofStatus: 'undefined',
+  type: 'invalid_request_error',
+  requestID: 'req_local_probe',
+  errorBodyKeys: [ 'type', 'error', 'request_id' ],
+  innerType: 'invalid_request_error',
+  logged: {
+    errorName: 'Error',
+    errorMessage: '{"type":"error","error":{"details":null,"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_local_probe"}'
+  },
+  providerRefusal: 'the account behind this API key has too little credit'
+}
+
+=== C. usage limit as an error event (HTTP 200) ===
+{
+  requestsSeenByServer: 1,
+  constructorName: 'APIError',
+  name: 'Error',
+  hasStatusKey: true,
+  status: undefined,
+  typeofStatus: 'undefined',
+  type: 'invalid_request_error',
+  requestID: 'req_local_probe',
+  errorBodyKeys: [ 'type', 'error', 'request_id' ],
+  innerType: 'invalid_request_error',
+  logged: {
+    errorName: 'Error',
+    errorMessage: '{"type":"error","error":{"details":null,"type":"invalid_request_error","message":"You have reached your specified API usage limits. You will regain access on 2026-10-01 at 00:00 UTC."},"request_id":"req_local_probe"}'
+  },
+  providerRefusal: 'the organisation that owns this API key has reached its usage limit'
+}
+
+=== D. overloaded_error as an error event (HTTP 200), the documented example ===
+{
+  requestsSeenByServer: 1,
+  constructorName: 'APIError',
+  name: 'Error',
+  hasStatusKey: true,
+  status: undefined,
+  typeofStatus: 'undefined',
+  type: 'overloaded_error',
+  requestID: 'req_local_probe',
+  errorBodyKeys: [ 'type', 'error', 'request_id' ],
+  innerType: 'overloaded_error',
+  logged: {
+    errorName: 'Error',
+    errorMessage: '{"type":"error","error":{"details":null,"type":"overloaded_error","message":"Overloaded"},"request_id":"req_local_probe"}'
+  },
+  providerRefusal: null
+}
+
+=== E. the same credit refusal as a plain HTTP 400 ===
+{
+  requestsSeenByServer: 1,
+  constructorName: 'BadRequestError',
+  name: 'Error',
+  hasStatusKey: true,
+  status: 400,
+  typeofStatus: 'number',
+  type: 'invalid_request_error',
+  requestID: 'req_local_probe',
+  errorBodyKeys: [ 'type', 'error', 'request_id' ],
+  innerType: 'invalid_request_error',
+  logged: {
+    errorName: 'Error',
+    errorMessage: '400 {"type":"error","error":{"details":null,"type":"invalid_request_error","message":"Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits."},"request_id":"req_local_probe"}'
+  },
+  providerRefusal: 'the account behind this API key has too little credit'
+}
+
+=== F. the monthly spend cap as HTTP 429, with no retry-after header ===
+{
+  requestsSeenByServer: 3,
+  constructorName: 'RateLimitError',
+  name: 'Error',
+  hasStatusKey: true,
+  status: 429,
+  typeofStatus: 'number',
+  type: 'rate_limit_error',
+  requestID: 'req_local_probe',
+  errorBodyKeys: [ 'type', 'error', 'request_id' ],
+  innerType: 'rate_limit_error',
+  logged: {
+    errorName: 'Error',
+    errorMessage: `429 {"type":"error","error":{"type":"rate_limit_error","message":"You have reached your API usage limits: your organization has crossed its monthly API usage threshold, set based on your organization's API tier. You will regain access on 2026-10-01 at 00:00 UTC.","details":{"error_code":"enforced_spend_limit_reached"}},"request_id":"req_local_probe"}`
+  },
+  providerRefusal: 'the organisation that owns this API key has reached its usage limit'
+}
+
+=== G. a plain rate limit as HTTP 429 ===
+{
+  requestsSeenByServer: 3,
+  constructorName: 'RateLimitError',
+  name: 'Error',
+  hasStatusKey: true,
+  status: 429,
+  typeofStatus: 'number',
+  type: 'rate_limit_error',
+  requestID: 'req_local_probe',
+  errorBodyKeys: [ 'type', 'error', 'request_id' ],
+  innerType: 'rate_limit_error',
+  logged: {
+    errorName: 'Error',
+    errorMessage: '429 {"type":"error","error":{"details":null,"type":"rate_limit_error","message":"This request would exceed the rate limit of your organization for input tokens per minute. See the response headers for current usage, and try again later."},"request_id":"req_local_probe"}'
+  },
+  providerRefusal: null
+}
+
+=== H. the monthly spend cap as an error event (HTTP 200) ===
+{
+  requestsSeenByServer: 1,
+  constructorName: 'APIError',
+  name: 'Error',
+  hasStatusKey: true,
+  status: undefined,
+  typeofStatus: 'undefined',
+  type: 'rate_limit_error',
+  requestID: 'req_local_probe',
+  errorBodyKeys: [ 'type', 'error', 'request_id' ],
+  innerType: 'rate_limit_error',
+  logged: {
+    errorName: 'Error',
+    errorMessage: `{"type":"error","error":{"type":"rate_limit_error","message":"You have reached your API usage limits: your organization has crossed its monthly API usage threshold, set based on your organization's API tier. You will regain access on 2026-10-01 at 00:00 UTC.","details":{"error_code":"enforced_spend_limit_reached"}},"request_id":"req_local_probe"}`
+  },
+  providerRefusal: 'the organisation that owns this API key has reached its usage limit'
+}
+
+=== I. "prompt is too long" as a plain HTTP 400 ===
+{
+  requestsSeenByServer: 1,
+  constructorName: 'BadRequestError',
+  name: 'Error',
+  hasStatusKey: true,
+  status: 400,
+  typeofStatus: 'number',
+  type: 'invalid_request_error',
+  requestID: 'req_local_probe',
+  errorBodyKeys: [ 'type', 'error', 'request_id' ],
+  innerType: 'invalid_request_error',
+  logged: {
+    errorName: 'Error',
+    errorMessage: '400 {"type":"error","error":{"details":null,"type":"invalid_request_error","message":"prompt is too long: 1000212 tokens > 1000000 maximum"},"request_id":"req_local_probe"}'
+  },
+  providerRefusal: null
+}
+
+=== J. "prompt is too long" as an error event (HTTP 200) ===
+{
+  requestsSeenByServer: 1,
+  constructorName: 'APIError',
+  name: 'Error',
+  hasStatusKey: true,
+  status: undefined,
+  typeofStatus: 'undefined',
+  type: 'invalid_request_error',
+  requestID: 'req_local_probe',
+  errorBodyKeys: [ 'type', 'error', 'request_id' ],
+  innerType: 'invalid_request_error',
+  logged: {
+    errorName: 'Error',
+    errorMessage: '{"type":"error","error":{"details":null,"type":"invalid_request_error","message":"prompt is too long: 1000212 tokens > 1000000 maximum"},"request_id":"req_local_probe"}'
+  },
+  providerRefusal: null
+}

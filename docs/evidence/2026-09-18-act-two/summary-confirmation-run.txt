@@ -1,0 +1,3 @@
+Both new messages are accounted for: the 08:34 mail is the invitation memory already shows as booked-from today, and the 08:36 mail is Cal.com's own confirmation of that exact booking (Friday, September 18, 2026, 11:00–11:30am Europe/Prague, status "Confirmed") — no discrepancy, no cancellation, nothing new to act on.
+
+No memory update or action was needed: this is simply the confirmation of the booking already recorded, so nothing needs action.

@@ -1,0 +1,23 @@
+# Secrets — never commit a real key. See CLAUDE.md "Secrets".
+.env
+.env.*
+!.env.example
+
+# OS
+.DS_Store
+
+# Dependencies, build output, caches and runtime state.
+# examples/ is committed on purpose; data/ holds the live bot folders and is not.
+node_modules/
+dist/
+data/
+.vitest/
+*.log
+__pycache__/
+*.pyc
+
+# Linked git worktrees created by the Claude Code harness.
+.claude/worktrees/
+
+# Local notes, guides and raw evidence captures (.local/evidence/). Never committed.
+.local/

@@ -1,0 +1,50 @@
+# Actions are pinned to the commit of their v4 tag (the tag is in the comment), because Semgrep
+# rejects mutable tags. To update one, move the tag and the SHA together.
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      # The pnpm version comes from "packageManager" in package.json.
+      - uses: pnpm/action-setup@b906affcce14559ad1aafd4ab0e942779e9f58b1 # v4
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - run: pnpm install --frozen-lockfile
+
+      - name: Typecheck
+        run: pnpm typecheck
+
+      - name: Unit tests
+        run: pnpm test
+
+      # The in-sandbox companion is Python. The tests use only the standard library.
+      - name: Companion tests (Python)
+        run: python3 -B -m unittest discover -s src/server/companion -p 'companion_test.py'
+
+      # Needs no keys and no network. It runs typecheck and the tests again, and then the greps that
+      # keep site names, the words of one bot's job, dates and project history out of src/.
+      - name: Platform-boundary checks
+        run: pnpm preflight
+
+  semgrep:
+    runs-on: ubuntu-latest
+    container:
+      image: semgrep/semgrep
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+      - name: Semgrep scan
+        run: semgrep scan --config p/default --config p/typescript --error

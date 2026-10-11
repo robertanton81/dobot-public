@@ -1,0 +1,77 @@
+{
+  "sourceCommit": "fd0807a064105063e43fad4ec11799cc54c37570",
+  "runs": 68,
+  "calls": 1137,
+  "actualUsd": 23.990078,
+  "averageRunUsd": 0.352795,
+  "costBreakdownUsd": {
+    "input": 0.004496,
+    "output": 4.05318,
+    "cacheRead": 3.410825,
+    "cacheWrite": 16.521578
+  },
+  "wholeRunRouting": {
+    "noComputerSteps": {
+      "runs": 13,
+      "usd": 0.716897
+    },
+    "alsoExcludingScreenTools": {
+      "runs": 10,
+      "usd": 0.588657
+    },
+    "grossSavingPercent": 1.494152,
+    "grossSavingExcludingScreenToolsPercent": 1.226876
+  },
+  "recorded": {
+    "warmCallsAfterRemoval": {
+      "calls": 540,
+      "readOnlyBasePrefix": 400,
+      "averageWriteTokens": 9727
+    },
+    "warmCallsWithoutRemoval": {
+      "calls": 521,
+      "readBeyondBasePrefix": 468,
+      "averageWriteTokens": 990
+    },
+    "msBetweenCostEventsInRunsWith14OrMoreImages": {
+      "runs": 19,
+      "smallestRunMedian": 3784,
+      "medianOfRunMedians": 4497,
+      "largestRunMedian": 6808
+    }
+  },
+  "replay": {
+    "imageTokens": 1306,
+    "stubTokens": 15,
+    "baseline": {
+      "usd": 25.638488,
+      "maxPromptTokens": 47099,
+      "batchPrunes": 540
+    },
+    "batching": {
+      "usd": 15.043207,
+      "maxPromptTokens": 54845,
+      "batchPrunes": 32
+    },
+    "neverPrune": {
+      "usd": 15.796244,
+      "maxPromptTokens": 93209,
+      "batchPrunes": 0
+    },
+    "baselineErrorPercent": 6.871214,
+    "savingVsRecordedPercent": 37.294048,
+    "savingVsSimulatedBaselinePercent": 41.325686,
+    "sensitivityAt1334ImageTokens": {
+      "baseline": {
+        "usd": 25.638488,
+        "maxPromptTokens": 47099,
+        "batchPrunes": 540
+      },
+      "batching": {
+        "usd": 15.095777,
+        "maxPromptTokens": 55013,
+        "batchPrunes": 32
+      }
+    }
+  }
+}

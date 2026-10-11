@@ -1,0 +1,3 @@
+The page now shows "Choose an account to continue" with the Dobot AI account displaying a lock icon, confirming the mailbox session is signed out. As instructed, I'm stopping here — no sign-in, no mail reading, and no memory changes made.
+
+I opened the mailbox, clicked the account menu at the top right, and selected "Odhlásit se" (Sign out). The page now shows Seznam's account-chooser screen with the Dobot AI account locked, confirming the sign-out is complete.

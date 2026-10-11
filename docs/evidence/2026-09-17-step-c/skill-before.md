@@ -1,0 +1,24 @@
+---
+name: handle-replies
+description: When mail arrives: open my mailbox on my computer, read the new mail about the applications, and when an interview invitation arrives, propose one slot and book it after approval.
+---
+Open https://mail.example.test with open_url. On a sign-in page (an address, a password or a code field, a "Continue" button), call request_takeover at once with the reason "the mailbox asks me to sign in"; never type a password. After the hand back, take a screenshot and continue.
+
+Read all the new mail first (the unread messages; skip newsletters and notifications), check each message against memory, and sort it into one of four kinds before you act on any:
+
+1. A cancellation or a change of a booking memory knows: one sentence in chat and one memory line naming the slot, "Cancelled on <date>: the booking on <slot> with <company>" or "Changed on <date>: the booking on <slot> with <company> is now <new slot>". Never book a new slot on your own because of it.
+2. A confirmation: a calendar invitation or a scheduling-page confirmation, usually with links to cancel or reschedule, whose date and time equal a slot memory knows (a "Booked on" slot, or the new slot of a "Changed on" line, including one written earlier in this run). Never a new invitation, so do not open its links. Report it by the booking's latest state, in one sentence naming the mail: "the calendar invitation received <date> <time>: the booking on <slot> is confirmed", or "… was cancelled on <date>", or "… was moved to <new slot>".
+3. An invitation you already acted on: a "Booked on" line names the same subject and received date and time. It stays handled for good, even if unread, even if that booking was cancelled or changed since: say so in one sentence naming the mail ("the invitation received <date> <time> is the one I booked from on <date>"), and never book from it or open its links again.
+4. A new invitation: a scheduling link memory does not identify (another subject or received time, or a "Booked on" line without those details). A fresh invitation names no time of its own, only a link. A mail that names a time and is not clearly about an existing booking is open work too: propose, with what memory shows as a warning.
+
+Write the lines of kind 1 before you propose anything. For a new reply or invitation, name the hand-off line in memory for the same company: "This looks like a reply to the application I prepared on <date>; I did not submit it, you may have." Several open invitations for one job: act on the newest, name the older ones on the card; a handled one never counts. A slot or a change the user asks for in chat is a new job, done as asked through approval.
+
+Doubts are warnings on the card, never a reason to stop or to ask first: a sender not on the company's own domain ("sender not verified — not an address on the company's domain"), a job never applied to, a strange link, all at once.
+
+To book: open the link with open_url. The page shows a calendar of days, then the free times of the day picked. If it shows a time zone other than Europe/Prague, open the picker, type "Prague" and pick it; if nothing is found after one try, keep the page's zone and name it on the card. Pick the first slot that fits the constraints in memory (working days, 9:00 to 17:00 Prague time; a slot freed by a cancellation counts): the day, then the time. The form opens on the same page and is not the booking yet: fill in the name to use on forms and my address (bot@example.test), press Escape after the address so the browser's suggestion popup closes, and do not press "Confirm" yet.
+
+Call propose_action with kind "book", the summary "Book <weekday> <date> <time>–<time> for the interview with <company>, from the invitation received <date> <time>", the consequences ["a calendar invitation is sent to my address", "this accepts the scheduling page's terms"], every warning, an earlier booking for this interview as a warning ("a booking for this interview already exists on <slot>", or "the booking on <slot> was cancelled on <date>"), and target "Confirm". Wait. If denied, say so in chat and stop.
+
+After approval, click "Confirm". A human check may follow (a tick box, often pictures): never try it; call request_takeover with the reason "the booking page asks me to prove I am human", ask the human to finish it and press Continue, and take a screenshot after the hand back. Screenshot the confirmation page, say what was booked, and call remember with one line: "Booked on <date>: interview with <company> on <slot>, from the invitation received <date> <time> with the subject "<subject>"; linked to the application I prepared on <date>." Copy the received time and the subject exactly from the mail's header; they tell this invitation from another one on the same day.
+
+End with one sentence only when nothing else needs action.

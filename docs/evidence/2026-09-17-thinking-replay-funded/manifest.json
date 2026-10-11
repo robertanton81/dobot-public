@@ -1,0 +1,33 @@
+{
+  "preparedAt": "2026-09-17T13:50:42.878Z",
+  "originalRunId": "c5dd5468-352c-4b14-8d96-60841edf83c6",
+  "uids": [
+    84,
+    86,
+    88,
+    90,
+    92
+  ],
+  "trigger": "rewound watermark; next normal poll after restart",
+  "watermarkBefore": {
+    "uidValidity": "1",
+    "uidNext": 93
+  },
+  "watermarkForReplay": {
+    "uidValidity": "1",
+    "uidNext": 84
+  },
+  "sha256": {
+    "memory": "53f68f708a5d2ad041521fdbcfeb2ec05995d024ceda20fa5f1a34ea71236c50",
+    "chat": "3e5835df197e71908b3c84156f168d0319c415d2d2030f648105ca260bd5ed81",
+    "skill": "76b4e23bf374a2064dcf36f3b2e29d582604c2f8ffa2b3ec0979e9fee88adc89",
+    "routine": "50d12bd8ddbc9e8d720e862104ce8e4006f2028324cd2e416a01b82bd912ae3d"
+  },
+  "replayRunId": "ac7f94ab-f340-47a6-82bb-6e19339d96fa",
+  "codeCommit": "8c439c70388a1643161af68c8bbf0b934c2c8409",
+  "sourceSha256": {
+    "src/server/agent/run.ts": "3e36a7d0b5c1fde3e1c5ba6a8559e01e248e647c4937a9288b2715359479ad8f",
+    "src/server/store/types.ts": "bfbacc0d0e960773c06806dbaea93777ed74b0b67ab802fd513cc8daff39bdde",
+    "src/server/agent/prompt.ts": "896a8370e305d13cc6a2396c3a2922e9af720e5c6f1bd150f8b365dbe8137096"
+  }
+}

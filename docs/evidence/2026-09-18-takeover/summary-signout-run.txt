@@ -1,0 +1,3 @@
+The page now shows the sign-in/account chooser screen ("Choose an account to continue" with the Dobot AI account showing a lock icon), confirming we are signed out of the mailbox session. As instructed, I will stop here without signing in again, without reading any mail, and without writing to memory.
+
+I've completed the takeover rehearsal setup: I opened the mailbox tab, clicked the account avatar menu at the top right, and selected "Odhlásit se" (Sign out). The page now shows Seznam's "Choose an account to continue" screen with the Dobot AI account locked, confirming the sign-out succeeded. I stopped there as instructed — no sign-in, no mail reading, and no memory changes were made.
