@@ -5,7 +5,7 @@ Dobot is an AI coworker prototype: a bot works on its own visible remote compute
 Author: Robert Anton. Built with Claude Code and Codex.
 
 > This is a one-commit snapshot of a private repository with 396 commits made with Claude Code
-> and Codex. The full history is available on request.
+> and Codex. The full history stays private; I can walk you through it on a call.
 
 ## What it does
 
